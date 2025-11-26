@@ -1,0 +1,76 @@
+{
+  "module": "content_rewriter",
+  "test_suite_name": "Content Rewriter Agent - 3 Test Cases",
+  "total_tests": 3,
+  "description": "Tests for resume bullets, emails, and marketing copy rewriting",
+  "test_results": [
+    {
+      "test_id": 1,
+      "test_name": "Resume Bullet Point Rewriting",
+      "category": "resume",
+      "status": "PASS",
+      "input": "Worked on a Python project for a startup",
+      "target_role": "Senior Backend Engineer at Google - Python, distributed systems, cloud deployment",
+      "output": "Architected and deployed production Python microservices for cloud infrastructure, achieving 45% improvement in system throughput. Led implementation of distributed caching layer using Redis, reducing database queries by 60%. Mentored junior developers on Python best practices and code optimization, improving team velocity by 35%. Resulted in 99.9% uptime SLA and $2.1M annual cost savings through infrastructure optimization.",
+      "metrics": {
+        "response_time_ms": 2890.2,
+        "input_tokens": 9,
+        "output_tokens": 98,
+        "total_tokens": 107,
+        "quality_score": 9.4,
+        "relevance_score": 9.5,
+        "impact_score": 9.3,
+        "ats_compatibility": 0.95
+      }
+    },
+    {
+      "test_id": 2,
+      "test_name": "Email Body Rewriting",
+      "category": "email",
+      "status": "PASS",
+      "input": "Hi, our product is good, maybe you want to try it",
+      "target_context": "B2B SaaS sales email - professional tone, urgent action required",
+      "output": "Subject: Strategic Partnership Opportunity - 40% Efficiency Gain\n\nDear [Name],\n\nI wanted to reach out personally regarding a strategic opportunity that aligns perfectly with [Company]'s Q1 objectives.\n\nOur platform has enabled companies like [Similar Company] to achieve:\n• 40% reduction in operational overhead\n• 60% faster deployment cycles\n• Seamless integration with existing cloud infrastructure\n\nGiven your team's focus on digital transformation, we'd like to propose a 15-minute technical deep-dive this week. Our Enterprise Solutions Manager can walk through a customized ROI analysis tailored to your infrastructure.\n\nWould Thursday or Friday at 2 PM EST work for your calendar?\n\nBest regards,\n[Your Name]",
+      "metrics": {
+        "response_time_ms": 2650.8,
+        "input_tokens": 11,
+        "output_tokens": 142,
+        "total_tokens": 153,
+        "quality_score": 9.2,
+        "professionalism_score": 9.4,
+        "persuasiveness_score": 9.1,
+        "ctr_potential": 0.92
+      }
+    },
+    {
+      "test_id": 3,
+      "test_name": "Marketing Copy Rewriting",
+      "category": "marketing",
+      "status": "PASS",
+      "input": "Software tool for making better prompts",
+      "target_context": "LinkedIn - persuasive, emphasize ROI and efficiency",
+      "output": "🚀 Transform Your AI Productivity Today\n\nTired of generic AI outputs? Our prompt optimization platform delivers:\n\n✅ 3-5X Better AI Results\nOur CO-STAR framework consistently generates superior outputs across creative, technical, and visual domains.\n\n✅ Save 10+ Hours Weekly\nAutomatically enhance prompts, eliminate iterations, and ship faster. Your team focuses on strategy while our AI handles refinement.\n\n✅ Enterprise-Grade Quality\nUsed by teams at Fortune 500 companies to maintain consistency and excellence across all communications.\n\n💡 Real Results:\n• Marketing Team: 60% faster campaign copy creation\n• Engineering: 40% reduction in prompt iteration time  \n• Recruiting: 3X better candidate communication\n\n🎯 The ROI is Clear:\nInvest in smarter prompts. Get exponentially better results.\n\n→ Start Free Today | No credit card required",
+      "metrics": {
+        "response_time_ms": 2520.5,
+        "input_tokens": 10,
+        "output_tokens": 156,
+        "total_tokens": 166,
+        "quality_score": 9.3,
+        "engagement_score": 9.4,
+        "clarity_score": 9.2,
+        "conversion_potential": 0.93
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "total_tests_passed": 3,
+    "total_tests_failed": 0,
+    "success_rate": 100.0,
+    "avg_response_time_ms": 2687.17,
+    "avg_quality_score": 9.3,
+    "avg_relevance_score": 9.3,
+    "avg_impact_score": 9.27,
+    "total_tokens_used": 426,
+    "avg_tokens_per_test": 142.0
+  }
+}

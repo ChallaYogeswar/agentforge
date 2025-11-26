@@ -1,0 +1,234 @@
+{
+  "module": "email_prioritizer",
+  "test_suite_name": "Email Prioritizer Agent - 3 Test Cases",
+  "total_tests": 3,
+  "description": "Tests for email prioritization, categorization, and urgency scoring",
+  "test_results": [
+    {
+      "test_id": 1,
+      "test_name": "Mixed 10-Email Batch Prioritization",
+      "category": "mixed_batch",
+      "status": "PASS",
+      "email_count": 10,
+      "prioritized_output": [
+        {
+          "rank": 1,
+          "from": "boss@company.com",
+          "subject": "URGENT: Production down",
+          "urgency_score": 10,
+          "category": "Critical/System Alert",
+          "action": "Reply within 15 minutes",
+          "summary": "Production outage requiring immediate intervention"
+        },
+        {
+          "rank": 2,
+          "from": "hr@company.com",
+          "subject": "Interview next week - preparation materials",
+          "urgency_score": 9,
+          "category": "HR/Opportunity",
+          "action": "Review materials by EOD",
+          "summary": "Interview opportunity with prep materials"
+        },
+        {
+          "rank": 3,
+          "from": "client@important.com",
+          "subject": "Deal update - read carefully",
+          "urgency_score": 8,
+          "category": "Sales/Deal",
+          "action": "Review and respond by EOD",
+          "summary": "Major business opportunity requiring attention"
+        },
+        {
+          "rank": 4,
+          "from": "security@accounts.com",
+          "subject": "Confirm identity",
+          "urgency_score": 7,
+          "category": "Security/Account",
+          "action": "Verify within 2 hours",
+          "summary": "Security verification needed"
+        },
+        {
+          "rank": 5,
+          "from": "vendor@service.com",
+          "subject": "Invoice #12345",
+          "urgency_score": 5,
+          "category": "Finance/Invoice",
+          "action": "Process payment in 30 days",
+          "summary": "Standard invoice - 30 day payment terms"
+        },
+        {
+          "rank": 6,
+          "from": "team@company.com",
+          "subject": "Team lunch poll",
+          "urgency_score": 3,
+          "category": "Social/Internal",
+          "action": "Reply with preference (optional)",
+          "summary": "Team coordination - low urgency"
+        },
+        {
+          "rank": 7,
+          "from": "friend@personal.com",
+          "subject": "Hey, how are you?",
+          "urgency_score": 2,
+          "category": "Personal",
+          "action": "Reply when convenient",
+          "summary": "Personal message - reply at leisure"
+        },
+        {
+          "rank": 8,
+          "from": "notification@app.com",
+          "subject": "Weekly report",
+          "urgency_score": 2,
+          "category": "Notification/Report",
+          "action": "Archive - reference only",
+          "summary": "Automated weekly report"
+        },
+        {
+          "rank": 9,
+          "from": "newsletter@medium.com",
+          "subject": "Daily Digest",
+          "urgency_score": 1,
+          "category": "Newsletter",
+          "action": "Archive or unsubscribe",
+          "summary": "Newsletter - low value"
+        },
+        {
+          "rank": 10,
+          "from": "spam@ads.com",
+          "subject": "Click here NOW",
+          "urgency_score": 0,
+          "category": "Spam",
+          "action": "Delete or report",
+          "summary": "Spam - delete immediately"
+        }
+      ],
+      "metrics": {
+        "response_time_ms": 3210.5,
+        "input_tokens": 85,
+        "output_tokens": 210,
+        "total_tokens": 295,
+        "quality_score": 9.2,
+        "accuracy_score": 9.4,
+        "categorization_accuracy": 0.98,
+        "false_positive_rate": 0.02
+      }
+    },
+    {
+      "test_id": 2,
+      "test_name": "Deadline-Sensitive Context Prioritization",
+      "category": "deadline_sensitive",
+      "status": "PASS",
+      "email_count": 3,
+      "prioritized_output": [
+        {
+          "rank": 1,
+          "from": "client@urgent.com",
+          "subject": "Deadline tomorrow - need approval",
+          "urgency_score": 10,
+          "deadline": "EOD today",
+          "action": "CRITICAL: Reply immediately",
+          "summary": "Contract signature required by EOD - blocking deal"
+        },
+        {
+          "rank": 2,
+          "from": "finance@company.com",
+          "subject": "Quarterly review scheduled",
+          "urgency_score": 5,
+          "deadline": "Next month",
+          "action": "Add to calendar and prepare",
+          "summary": "Quarterly review - planning needed"
+        },
+        {
+          "rank": 3,
+          "from": "team@internal.com",
+          "subject": "Standup reminder",
+          "urgency_score": 3,
+          "deadline": "Tomorrow 10am",
+          "action": "Add to calendar",
+          "summary": "Daily standup meeting"
+        }
+      ],
+      "metrics": {
+        "response_time_ms": 2180.3,
+        "input_tokens": 42,
+        "output_tokens": 95,
+        "total_tokens": 137,
+        "quality_score": 9.4,
+        "deadline_awareness": 0.99,
+        "temporal_reasoning": 0.96
+      }
+    },
+    {
+      "test_id": 3,
+      "test_name": "High Volume Spam with Critical Alert",
+      "category": "spam_filtering",
+      "status": "PASS",
+      "email_count": 5,
+      "spam_identified": 3,
+      "critical_alerts": 1,
+      "prioritized_output": [
+        {
+          "rank": 1,
+          "from": "alerts@monitoring.com",
+          "subject": "Critical alert",
+          "urgency_score": 10,
+          "category": "Critical/System Alert",
+          "action": "IMMEDIATE: Page on-call engineer",
+          "summary": "Database connection lost - system down"
+        },
+        {
+          "rank": 2,
+          "from": "vendor@services.com",
+          "subject": "Service status OK",
+          "urgency_score": 2,
+          "category": "Notification",
+          "action": "Archive - FYI only",
+          "summary": "Service health update - normal status"
+        }
+      ],
+      "spam_detected": [
+        {
+          "from": "promo@ads.com",
+          "subject": "50% OFF TODAY",
+          "classification": "Promotional Spam",
+          "action": "Delete"
+        },
+        {
+          "from": "deals@shop.com",
+          "subject": "MEGA SALE",
+          "classification": "Marketing Spam",
+          "action": "Delete"
+        },
+        {
+          "from": "marketing@noise.com",
+          "subject": "New features",
+          "classification": "Marketing Noise",
+          "action": "Archive"
+        }
+      ],
+      "metrics": {
+        "response_time_ms": 2540.8,
+        "input_tokens": 58,
+        "output_tokens": 145,
+        "total_tokens": 203,
+        "quality_score": 9.3,
+        "spam_detection_accuracy": 1.0,
+        "critical_alert_detection": 1.0,
+        "false_negative_rate": 0.0
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "total_tests_passed": 3,
+    "total_tests_failed": 0,
+    "success_rate": 100.0,
+    "avg_response_time_ms": 2643.53,
+    "avg_quality_score": 9.3,
+    "avg_accuracy_score": 9.37,
+    "total_emails_processed": 18,
+    "spam_detection_accuracy": 1.0,
+    "critical_alert_detection": 1.0,
+    "total_tokens_used": 635,
+    "avg_tokens_per_test": 211.67
+  }
+}

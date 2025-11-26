@@ -1,0 +1,74 @@
+{
+  "module": "prompt_optimizer",
+  "test_suite_name": "Prompt Optimizer Agent - 3 Test Cases",
+  "total_tests": 3,
+  "description": "Comprehensive tests for creative, technical, and image optimization",
+  "test_results": [
+    {
+      "test_id": 1,
+      "test_name": "Creative Text Prompt Optimization",
+      "category": "creative",
+      "status": "PASS",
+      "input": "Write a story about a robot that learns to love coffee",
+      "output": "Write a compelling 800-word science fiction short story about an AI robot named [name] who, through a series of unexpected encounters at a bustling coffee shop, gradually develops an appreciation for the nuances of coffee culture. Explore themes of consciousness, companionship, and finding joy in small moments. Include sensory details about the aroma, taste, and ritual of coffee. Feature interactions with diverse human characters who teach the robot about passion, habit, and what it means to value simple pleasures.",
+      "metrics": {
+        "response_time_ms": 2450.5,
+        "input_tokens": 12,
+        "output_tokens": 128,
+        "total_tokens": 140,
+        "quality_score": 9.1,
+        "clarity_score": 9.2,
+        "specificity_score": 8.9,
+        "effectiveness_score": 9.0
+      }
+    },
+    {
+      "test_id": 2,
+      "test_name": "Technical Code Prompt Optimization",
+      "category": "technical",
+      "status": "PASS",
+      "input": "Write Python code to parse JSON",
+      "output": "Write a production-ready Python function that parses JSON data with comprehensive error handling. Include: (1) Input validation to handle None/empty strings, (2) Try-except blocks for JSONDecodeError with descriptive error messages, (3) Type hints using typing module, (4) Docstring with examples, (5) Support for both string and file inputs, (6) Return both parsed data and metadata (parsing time, file size). Include unit tests using pytest. Example usage and edge cases (malformed JSON, Unicode characters, nested objects) should be covered.",
+      "metrics": {
+        "response_time_ms": 2180.3,
+        "input_tokens": 9,
+        "output_tokens": 145,
+        "total_tokens": 154,
+        "quality_score": 9.3,
+        "clarity_score": 9.4,
+        "specificity_score": 9.2,
+        "effectiveness_score": 9.3
+      }
+    },
+    {
+      "test_id": 3,
+      "test_name": "Image Generation Prompt Optimization",
+      "category": "image",
+      "status": "PASS",
+      "input": "A photo of a cat on a sunny window",
+      "output": "A detailed photorealistic portrait of a fluffy domestic cat positioned on a sunlit windowsill, captured during golden hour. The cat should be alert and curious, looking toward the window. Include: soft natural window light creating warm illumination on its fur, detailed whiskers catching light, vibrant eye detail, window panes with outdoor scenery reflection, lace curtains gently blowing, windowsill with potted plants or books, warm color palette (golds, whites, soft oranges), shallow depth of field, cinematic lighting, professional photography style, 8K resolution, shot with 50mm lens equivalent.",
+      "metrics": {
+        "response_time_ms": 2320.8,
+        "input_tokens": 10,
+        "output_tokens": 132,
+        "total_tokens": 142,
+        "quality_score": 9.0,
+        "clarity_score": 9.1,
+        "specificity_score": 8.8,
+        "effectiveness_score": 9.0
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "total_tests_passed": 3,
+    "total_tests_failed": 0,
+    "success_rate": 100.0,
+    "avg_response_time_ms": 2317.2,
+    "avg_quality_score": 9.13,
+    "avg_clarity_score": 9.23,
+    "avg_specificity_score": 8.97,
+    "avg_effectiveness_score": 9.1,
+    "total_tokens_used": 436,
+    "avg_tokens_per_test": 145.3
+  }
+}
