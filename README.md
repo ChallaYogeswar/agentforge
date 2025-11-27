@@ -4,9 +4,9 @@ Built for Kaggle Agents Intensive Capstone 2025
 
 [[License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [[Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
-[[Gemini Free Tier](https://img.shields.io/badge/Gemini%202.0-Free%20Tier-green)](#)
-[[Tests: 20/20](https://img.shields.io/badge/tests-20%2F20%20passed-success)](#)
-[[Quality: 9.24/10](https://img.shields.io/badge/quality-9.24%2F10-brightgreen)](#)
+[[Gemini Free Tier](https://img.shields.io/badge/Gemini%202.0-Free%20Tier-green)]
+[[Tests: 20/20](https://img.shields.io/badge/tests-20%2F20%20passed-success)]
+[[Quality: 9.24/10](https://img.shields.io/badge/quality-9.24%2F10-brightgreen)]
 
 ## What Is AgentForge?
 
