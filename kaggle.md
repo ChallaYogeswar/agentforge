@@ -44,25 +44,25 @@ A Zero-Cost, Production-Ready Multi-Agent Productivity Suite
                             ↓
         ┌───────────────────────────────────────────────┐
         │   🧠 INTENT ROUTER (Semantic + LLM)          │
-        │   Understands: "prompt optimization"          │
+        │   Understands: "prompt optimization"         │
         └───────────────────────────────────────────────┘
                             ↓
         ┌───────────────────────────────────────────────┐
-        │   📝 PROMPT OPTIMIZER AGENT                  │
+        │   📝 PROMPT OPTIMIZER AGENT                   │
         │   - Analyzes prompt quality                   │
         │   - Applies best practices                    │
         │   - Returns optimized version                 │
         └───────────────────────────────────────────────┘
                             ↓
         ┌───────────────────────────────────────────────┐
-        │   💾 MEMORY MANAGER (3-Tier)                 │
+        │   💾 MEMORY MANAGER (3-Tier)                  │
         │   - Stores user style preferences             │
         │   - Remembers past optimizations              │
         │   - Enables learning over time                │
         └───────────────────────────────────────────────┘
                             ↓
         ┌───────────────────────────────────────────────┐
-        │   📊 OBSERVABILITY LAYER                     │
+        │   📊 OBSERVABILITY LAYER                      │
         │   - Logs decision path                        │
         │   - Traces execution steps                    │
         │   - Evaluates output quality                  │
@@ -253,6 +253,13 @@ TOTAL                  | $100-2149/mo    | $0.00/mo                      |
 - ✅ Intelligent routing without manual configuration
 - ✅ Built-in 3-tier memory system
 - ✅ Complete evaluation and observability included
+
+### vs. AutoGPT/BabyAGI:
+
+- ✅ Focused on specific, useful tasks (not general AGI)
+- ✅ Deterministic routing (more reliable than autonomous loops)
+- ✅ Zero cost (they require paid OpenAI APIs)
+- ✅ Better observability and control mechanisms
 
 ### vs. Microsoft Semantic Kernel:
 
@@ -594,7 +601,7 @@ See `LICENSES.md` for all 35 dependency licenses (MIT, Apache 2.0, BSD).
 
 ---
 
-## 🙏 ACKNOWLEDGMENTS
+##  ACKNOWLEDGMENTS
 
 Built with:
 - Google Gemini 2.5 Flash - Free LLM API 
@@ -624,12 +631,10 @@ Inspired by:
 |                   | Routing Accuracy      | 88-95%            |
 | Cost              | Total Infrastructure  | $0.00/month       |
 |                   | Per Request           | $0.00             |
-| Reproducibility| Cross-Platform       | 100% verified     |
+| Reproducibility   | Cross-Platform        | 100% verified     |
 |                   | Setup Success Rate    | 100%              |
-| Documentation | Files Complete        | 7/7 (100%)        |
+| Documentation     | Files Complete        | 7/7 (100%)        |
 |                   | Lines of Code         | 2,847             |
-
-Overall Project Score: 98/100 (Top 1% quality)
 
 ---
 
