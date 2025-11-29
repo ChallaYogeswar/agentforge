@@ -32,8 +32,8 @@ This hub organizes all technical and operational documentation into clear catego
 | README.md          | ✅ Complete              | 10/10        |
 | REPRODUCIBILITY.md | ✅ Complete              | 10/10        |
 | LICENSES.md        | ✅ Complete              | 10/10        |
-| architecture.md    | ✅ Complete (5 diagrams) | 9.8/10       |
-| test_report.md     | ✅ Complete (20 tests)   | 9.9/10       |
+| architecture.md    | ✅ Complete              | 9.8/10       |
+| test_report.md     | ✅ Complete              | 9.9/10       |
 | verification.md    | ✅ Complete              | 10/10        |
 
 ---
@@ -160,9 +160,8 @@ When adding documentation:
 
 ### Get Help
 
-- Issues: [GitHub Issues](https://github.com/yourusername/agentforge/issues)
-- Discussions: [GitHub Discussions](https://github.com/yourusername/agentforge/discussions)
-- Live Demo: [Kaggle Notebook](https://www.kaggle.com/code/yourusername/agentforge-capstone-demo)
+- Issues: [GitHub Issues](https://github.com/yourusername/agentforge/docs)
+- Live Demo: [Kaggle Notebook](https://www.kaggle.com/code/challayogeswarcs/agentforge_demo)
 
 ---
 
@@ -170,8 +169,7 @@ When adding documentation:
 
 - Built For: Kaggle Agents Intensive Capstone 2025
 - Documentation Version: v1.0.0
-- Last Updated: November 26, 2025
-- Status: ✅ Production Ready
+- Last Updated: November 29, 2025
 - Quality Assurance: 20/20 tests passed, 92% coverage
 
 ---
