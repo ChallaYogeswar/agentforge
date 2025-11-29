@@ -18,7 +18,7 @@ A complete multi-agent system that runs 100% on Google’s free Gemini 2.5. No p
 | Agent                | Purpose                                      | Quality Score |
 |----------------------|----------------------------------------------|---------------|
 | Prompt Optimizer     | Turns any prompt into a high-performing one  | 9.13/10       |
-| Content Rewriter     | Tailors resumes, emails, marketing copy      | 9.30/10       |
+| Content OPtimizer     | Tailors resumes, emails, marketing copy      | 9.30/10       |
 | Email Prioritizer    | Ranks inbox by urgency (100% accuracy)       | 9.30/10       |
 
 ### 2 Extensible Architectures (Ready to Build)
@@ -91,15 +91,15 @@ textagentforge/
 
 Built for Kaggle Agents Intensive Capstone 2025
 
-Kaggle notebook: notebooks/AgentForge_Capstone_Demo.ipynb (45 cells)
-- Setup & Installation (5 cells)
-- Core Infrastructure (4 cells)
-- Functional Agents (3 cells)
-- Test Suite (4 cells)
-- Key Concepts Demo (4 cells)
-- Verification & Summary (3 cells)
-- Extensible Architectures (2 cells)
-- Advanced Features (8 cells: HITL, LLM Judge, MCP, A2A, Router, Config, etc.)
+Kaggle notebook: notebooks/AgentForge_Demo.ipynb
+- Setup & Installation
+- Core Infrastructure 
+- Functional Agents 
+- Test Suite 
+- Key Concepts Demo 
+- Verification & Summary 
+- Extensible Architectures 
+- Advanced Features 
 
 Add secret: GEMINI_API_KEY
 All 45 cells run end-to-end

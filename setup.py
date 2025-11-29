@@ -32,7 +32,7 @@ def setup_environment():
         "data/logs",
         "data/memory/vector_store",
         "sample_outputs/prompt_optimizer",
-        "sample_outputs/career_architect",
+        "sample_outputs/career_optimizer",
         "sample_outputs/email_prioritizer",
     ]
     

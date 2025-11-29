@@ -2,7 +2,7 @@
 
 COMPLETION & VALIDATION DOCUMENT  
 Kaggle Agents Intensive Capstone 2025  
-Issue Date: November 27, 2025
+Issue Date: November 26, 2025
 
 ---
 

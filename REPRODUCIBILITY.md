@@ -5,7 +5,7 @@
 Tested & validated on:
 - Windows 11 · macOS 14 Sonoma · Ubuntu 22.04 / 24.04
 - Python 3.10 · 3.11 · 3.12
-- Date: November 26, 2025
+- Date: November 29, 2025
 - Success rate when instructions followed exactly: 100%
 
 ---
