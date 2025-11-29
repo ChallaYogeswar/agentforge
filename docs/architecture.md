@@ -141,6 +141,7 @@ Each agent follows a standardized structure with a BaseAgent interface, integrat
 
 ```mermaid
 flowchart TD
+
     subgraph Core["Core Infrastructure"]
         B1[BaseAgent Interface]
         R1[Intent Router]
@@ -148,41 +149,41 @@ flowchart TD
         MC[MCP Tool Interface]
         EV[Evaluation & LLM-as-Judge]
     end
-    
+
     subgraph Agents["Functional Agents"]
         PO[Prompt Optimizer]
-        CR[Content OPtimizer<br/>(Career Architect)]
+        CR[Content Optimizer<br/>(Career Architect)]
         EP[Email Prioritizer]
     end
-    
+
     subgraph LLM["Model Layer"]
         G2[Gemini 2.0 Flash Client]
     end
-    
+
     R1 --> PO
     R1 --> CR
     R1 --> EP
-    
+
     PO --> MM
     CR --> MM
     EP --> MM
-    
+
     PO --> MC
     CR --> MC
     EP --> MC
-    
+
     PO --> G2
     CR --> G2
     EP --> G2
-    
+
     PO --> EV
     CR --> EV
     EP --> EV
-    
+
     classDef core fill:#6366f1,stroke:#4f46e5,color:white;
     classDef agent fill:#22c55e,stroke:#16a34a,color:white;
     classDef model fill:#facc15,stroke:#eab308,color:#1f2937;
-    
+
     class B1,R1,MM,MC,EV core;
     class PO,CR,EP agent;
     class G2 model;
@@ -197,27 +198,7 @@ Figure 4: Internal structure showing communication between agents, core modules,
 This diagram outlines the automated testing and documentation pipeline used for project validation and final submission readiness.
 
 ```mermaid
-flowchart LR
-    D[Developer / CI] --> T1[Pytest Suite<br/>Unit + Integration Tests]
-    T1 --> T2[Metrics Collector<br/>Response Time · Quality · Tokens]
-    
-    T2 --> O1[Sample Outputs<br/>sample_outputs/]
-    T2 --> O2[Test Reports<br/>RESULTS.md · JSON]
-    T2 --> O3[Completion & Validation<br/>Completion_and_Validation.md]
-    T2 --> O4[Verification Certificate<br/>Verification.md]
-    
-    O1 --> F[Final Submission<br/>Kaggle Capstone]
-    O2 --> F
-    O3 --> F
-    O4 --> F
-    
-    classDef tests fill:#0ea5e9,stroke:#0284c7,color:white;
-    classDef outputs fill:#f97316,stroke:#ea580c,color:white;
-    classDef final fill:#84cc16,stroke:#65a30d,color:white;
-    
-    class T1,T2 tests;
-    class O1,O2,O3,O4 outputs;
-    class F final;
+
 ```
 
 Figure 5: Automated testing and reporting workflow ensuring reproducibility and submission integrity.
