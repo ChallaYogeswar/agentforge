@@ -16,7 +16,7 @@ try:
     def get_llm() -> BaseLanguageModel:
         if not Config.USE_OLLAMA:
             return ChatGoogleGenerativeAI(
-                model="gemini-2.5",
+                model="gemini-2.5-flash",   # or "gemini-2.5-pro" depending on your needs
                 google_api_key=Config.GEMINI_API_KEY,
                 temperature=0.7,
                 max_tokens=4096,
