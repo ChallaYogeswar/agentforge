@@ -31,11 +31,10 @@ class TestPromptOptimizer:
         test_prompt = "Write a story about an AI"
         result = self.agent.run(test_prompt)
         
-        # Verify result
         assert result is not None, "Result should not be None"
         assert isinstance(result, str), "Result should be string"
         assert len(result) > 0, "Result should not be empty"
-        print(f"✅ Test 1.1 passed: Basic optimization works")
+        print("✅ Test 1.1 passed: Basic optimization works")
     
     def test_technical_prompt_optimization(self):
         """Test 2: Technical prompt optimization"""
@@ -44,7 +43,7 @@ class TestPromptOptimizer:
         
         assert result is not None, "Result should not be None"
         assert len(result) > len(test_prompt), "Optimized should be more detailed"
-        print(f"✅ Test 1.2 passed: Technical prompt optimization")
+        print("✅ Test 1.2 passed: Technical prompt optimization")
     
     def test_creative_prompt_optimization(self):
         """Test 3: Creative prompt optimization"""
@@ -53,7 +52,7 @@ class TestPromptOptimizer:
         
         assert result is not None, "Result should not be None"
         assert "poem" in result.lower() or "humor" in result.lower() or len(result) > 50
-        print(f"✅ Test 1.3 passed: Creative prompt optimization")
+        print("✅ Test 1.3 passed: Creative prompt optimization")
     
     def test_performance_timing(self):
         """Test 4: Performance - response time"""
@@ -63,6 +62,7 @@ class TestPromptOptimizer:
         result = self.agent.run(test_prompt)
         duration = time.time() - start_time
         
+        assert result is not None, "Result should not be None"
         assert duration < 60, f"Response should complete within 60s, took {duration:.2f}s"
         print(f"✅ Test 1.4 passed: Performance OK ({duration:.2f}s)")
 
@@ -86,7 +86,7 @@ class TestCareerArchitect:
         assert result is not None, "Result should not be None"
         assert len(result) > 0, "Result should not be empty"
         assert len(result) > len(resume_bullet), "Should be more detailed than original"
-        print(f"✅ Test 2.1 passed: Resume bullet rewriting")
+        print("✅ Test 2.1 passed: Resume bullet rewriting")
     
     def test_email_body_rewriting(self):
         """Test 2.2: Email body transformation"""
@@ -98,7 +98,7 @@ class TestCareerArchitect:
         
         assert result is not None, "Result should not be None"
         assert len(result) > 0, "Result should not be empty"
-        print(f"✅ Test 2.2 passed: Email body transformation")
+        print("✅ Test 2.2 passed: Email body transformation")
     
     def test_marketing_copy_rewriting(self):
         """Test 2.3: Marketing copy rewriting"""
@@ -110,7 +110,7 @@ class TestCareerArchitect:
         
         assert result is not None, "Result should not be None"
         assert len(result) > len(basic_copy), "Should be more detailed"
-        print(f"✅ Test 2.3 passed: Marketing copy rewriting")
+        print("✅ Test 2.3 passed: Marketing copy rewriting")
     
     def test_job_matching(self):
         """Test 2.4: Resume tailoring to job description"""
@@ -121,7 +121,7 @@ class TestCareerArchitect:
         result = self.agent.run(prompt)
         
         assert result is not None, "Result should not be None"
-        print(f"✅ Test 2.4 passed: Job matching rewrite")
+        print("✅ Test 2.4 passed: Job matching rewrite")
     
     def test_performance_timing(self):
         """Test 2.5: Performance - response time"""
@@ -132,6 +132,7 @@ class TestCareerArchitect:
         result = self.agent.run(prompt)
         duration = time.time() - start_time
         
+        assert result is not None, "Result should not be None"
         assert duration < 60, f"Response should complete within 60s, took {duration:.2f}s"
         print(f"✅ Test 2.5 passed: Performance OK ({duration:.2f}s)")
 
@@ -151,7 +152,7 @@ class TestEmailPrioritizer:
         
         assert result is not None, "Result should not be None"
         assert len(result) > 0, "Result should not be empty"
-        print(f"✅ Test 3.1 passed: Single email prioritization")
+        print("✅ Test 3.1 passed: Single email prioritization")
     
     def test_multiple_emails_batch(self):
         """Test 3.2: Batch email prioritization"""
@@ -163,12 +164,12 @@ class TestEmailPrioritizer:
             "Email 5: From spam - 50% off today"
         ]
         
-        email_text = "Prioritize these emails:\\n" + "\\n".join(emails)
+        email_text = "Prioritize these emails:\n" + "\n".join(emails)
         result = self.agent.run(email_text)
         
         assert result is not None, "Result should not be None"
         assert len(result) > 0, "Result should not be empty"
-        print(f"✅ Test 3.2 passed: Batch email prioritization")
+        print("✅ Test 3.2 passed: Batch email prioritization")
     
     def test_deadline_sensitivity(self):
         """Test 3.3: Deadline-sensitive email detection"""
@@ -178,13 +179,15 @@ class TestEmailPrioritizer:
             "Weekly report - check your metrics"
         ]
         
-        email_text = "Which emails are most time-sensitive:\\n" + "\\n".join(emails)
+        email_text = "Which emails are most time-sensitive:\n" + "\n".join(emails)
         result = self.agent.run(email_text)
         
         assert result is not None, "Result should not be None"
-        # Should identify deadline-sensitive email
-        assert any(keyword in result.lower() for keyword in ['urgent', 'eod', 'today', 'priority', 'critical', 'high'])
-        print(f"✅ Test 3.3 passed: Deadline sensitivity detection")
+        assert any(
+            keyword in result.lower() 
+            for keyword in ["urgent", "eod", "today", "priority", "critical", "high"]
+        ), "Should identify deadline-sensitive email"
+        print("✅ Test 3.3 passed: Deadline sensitivity detection")
     
     def test_spam_filtering(self):
         """Test 3.4: Spam vs legitimate email distinction"""
@@ -195,11 +198,11 @@ class TestEmailPrioritizer:
             "Meeting request: Q4 planning session"
         ]
         
-        email_text = "Filter these emails:\\n" + "\\n".join(emails)
+        email_text = "Filter these emails:\n" + "\n".join(emails)
         result = self.agent.run(email_text)
         
         assert result is not None, "Result should not be None"
-        print(f"✅ Test 3.4 passed: Spam filtering capability")
+        print("✅ Test 3.4 passed: Spam filtering capability")
     
     def test_performance_timing(self):
         """Test 3.5: Performance - response time"""
@@ -209,6 +212,7 @@ class TestEmailPrioritizer:
         result = self.agent.run(email)
         duration = time.time() - start_time
         
+        assert result is not None, "Result should not be None"
         assert duration < 60, f"Response should complete within 60s, took {duration:.2f}s"
         print(f"✅ Test 3.5 passed: Performance OK ({duration:.2f}s)")
 
@@ -231,9 +235,9 @@ class TestIntentRouter:
         
         for query in queries:
             routed = self.router.route(query)
-            assert routed == 'PromptOptimizerAgent', f"Should route to PromptOptimizerAgent, got {routed}"
+            assert routed == "PromptOptimizerAgent", f"Should route to PromptOptimizerAgent, got {routed}"
         
-        print(f"✅ Intent Router Test 1 passed: Prompt Optimizer routing")
+        print("✅ Intent Router Test 1 passed: Prompt Optimizer routing")
     
     def test_career_architect_routing(self):
         """Test routing to Career Architect"""
@@ -245,9 +249,9 @@ class TestIntentRouter:
         
         for query in queries:
             routed = self.router.route(query)
-            assert routed == 'ContentRewriterAgent', f"Should route to ContentRewriterAgent, got {routed}"
+            assert routed == "ContentRewriterAgent", f"Should route to ContentRewriterAgent, got {routed}"
         
-        print(f"✅ Intent Router Test 2 passed: Career Architect routing")
+        print("✅ Intent Router Test 2 passed: Career Architect routing")
     
     def test_email_prioritizer_routing(self):
         """Test routing to Email Prioritizer"""
@@ -259,9 +263,9 @@ class TestIntentRouter:
         
         for query in queries:
             routed = self.router.route(query)
-            assert routed == 'EmailPrioritizerAgent', f"Should route to EmailPrioritizerAgent, got {routed}"
+            assert routed == "EmailPrioritizerAgent", f"Should route to EmailPrioritizerAgent, got {routed}"
         
-        print(f"✅ Intent Router Test 3 passed: Email Prioritizer routing")
+        print("✅ Intent Router Test 3 passed: Email Prioritizer routing")
 
 
 class TestSystemIntegration:
@@ -272,59 +276,53 @@ class TestSystemIntegration:
         router = IntentRouter()
         query = "Optimize this prompt: write a story"
         
-        # Route
         agent_id = router.route(query)
-        assert agent_id == 'PromptOptimizerAgent', "Should route correctly"
+        assert agent_id == "PromptOptimizerAgent", "Should route correctly"
         
-        # Execute
         agent = PromptOptimizerAgent()
         result = agent.run(query)
         
         assert result is not None, "Should return result"
         assert len(result) > 0, "Result should not be empty"
         
-        print(f"✅ Integration Test 1 passed: Complete prompt optimization workflow")
+        print("✅ Integration Test 1 passed: Complete prompt optimization workflow")
     
     def test_complete_workflow_resume_rewriting(self):
         """Test: Complete workflow for resume rewriting"""
         router = IntentRouter()
         query = "Rewrite my resume for a tech job"
         
-        # Route
         agent_id = router.route(query)
-        assert agent_id == 'ContentRewriterAgent', "Should route correctly"
+        assert agent_id == "ContentRewriterAgent", "Should route correctly"
         
-        # Execute
         agent = ContentRewriterAgent()
         result = agent.run(query)
         
         assert result is not None, "Should return result"
         
-        print(f"✅ Integration Test 2 passed: Complete resume rewriting workflow")
+        print("✅ Integration Test 2 passed: Complete resume rewriting workflow")
     
     def test_complete_workflow_email_prioritization(self):
         """Test: Complete workflow for email prioritization"""
         router = IntentRouter()
         query = "Prioritize my emails by urgency"
         
-        # Route
         agent_id = router.route(query)
-        assert agent_id == 'EmailPrioritizerAgent', "Should route correctly"
+        assert agent_id == "EmailPrioritizerAgent", "Should route correctly"
         
-        # Execute
         agent = EmailPrioritizerAgent()
         result = agent.run(query)
         
         assert result is not None, "Should return result"
         
-        print(f"✅ Integration Test 3 passed: Complete email prioritization workflow")
+        print("✅ Integration Test 3 passed: Complete email prioritization workflow")
 
 
 def run_all_tests():
     """Run all tests with summary"""
-    print("\n" + "="*80)
+    print("\n" + "=" * 80)
     print("AGENTFORGE COMPREHENSIVE TEST SUITE")
-    print("="*80)
+    print("=" * 80)
     
     pytest.main([__file__, "-v", "-s", "--tb=short"])
 
