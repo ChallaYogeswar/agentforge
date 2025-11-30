@@ -55,17 +55,21 @@ Original: {test_case['input']}
 
 Make it powerful, quantified, and achievement-focused."""
             
-            result = self.router.route_request(user_input, user_id="test_user")
+            # Route to correct agent and run it
+            agent_name = self.router.route(user_input)
+            assert agent_name == "ContentRewriterAgent", f"Expected ContentRewriterAgent, got {agent_name}"
+            agent = ContentRewriterAgent()
+            result = agent.run(user_input)
             
             duration = time.time() - start_time
             
             # Validate response
-            assert result is not None, "Router returned None"
-            assert isinstance(result, dict), "Response should be dict"
+            assert result is not None, "Agent returned None"
+            assert isinstance(result, str), "Response should be a string"
             
             # Estimate tokens
             input_tokens = estimate_tokens(test_case['input'])
-            output_tokens = estimate_tokens(result.get('response', ''))
+            output_tokens = estimate_tokens(result)
             
             quality_score = generate_quality_score()
             
@@ -79,7 +83,7 @@ Make it powerful, quantified, and achievement-focused."""
                 status="PASS"
             )
             
-            response_text = result.get('response', '')
+            response_text = result
             assert len(response_text) > len(test_case['input']), \
                 "Rewritten bullet should include more detail"
             
@@ -125,17 +129,21 @@ Original: {test_case['input']}
 
 Make it professional, compelling, and action-oriented."""
             
-            result = self.router.route_request(user_input, user_id="test_user")
+            # Route to correct agent and run it
+            agent_name = self.router.route(user_input)
+            assert agent_name == "ContentRewriterAgent", f"Expected ContentRewriterAgent, got {agent_name}"
+            agent = ContentRewriterAgent()
+            result = agent.run(user_input)
             
             duration = time.time() - start_time
             
             # Validate response
-            assert result is not None, "Router returned None"
-            assert isinstance(result, dict), "Response should be dict"
+            assert result is not None, "Agent returned None"
+            assert isinstance(result, str), "Response should be a string"
             
             # Estimate tokens
             input_tokens = estimate_tokens(test_case['input'])
-            output_tokens = estimate_tokens(result.get('response', ''))
+            output_tokens = estimate_tokens(result)
             
             quality_score = generate_quality_score()
             
@@ -149,7 +157,7 @@ Make it professional, compelling, and action-oriented."""
                 status="PASS"
             )
             
-            response_text = result.get('response', '')
+            response_text = result
             assert len(response_text) > 0, "Should return rewritten email"
             
             print(f"\n✓ Test 2 PASSED: Email Rewrite")
@@ -194,17 +202,21 @@ Original: {test_case['input']}
 
 Make it compelling, benefit-driven, and emphasize ROI."""
             
-            result = self.router.route_request(user_input, user_id="test_user")
+            # Route to correct agent and run it
+            agent_name = self.router.route(user_input)
+            assert agent_name == "ContentRewriterAgent", f"Expected ContentRewriterAgent, got {agent_name}"
+            agent = ContentRewriterAgent()
+            result = agent.run(user_input)
             
             duration = time.time() - start_time
             
             # Validate response
-            assert result is not None, "Router returned None"
-            assert isinstance(result, dict), "Response should be dict"
+            assert result is not None, "Agent returned None"
+            assert isinstance(result, str), "Response should be a string"
             
             # Estimate tokens
             input_tokens = estimate_tokens(test_case['input'])
-            output_tokens = estimate_tokens(result.get('response', ''))
+            output_tokens = estimate_tokens(result)
             
             quality_score = generate_quality_score()
             
@@ -218,7 +230,7 @@ Make it compelling, benefit-driven, and emphasize ROI."""
                 status="PASS"
             )
             
-            response_text = result.get('response', '')
+            response_text = result
             assert len(response_text) > len(test_case['input']), \
                 "Marketing copy should be more detailed"
             
