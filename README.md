@@ -33,10 +33,10 @@ This hub organizes all technical and operational documentation into clear catego
 
 | Category     | Document                           | Purpose                                        |
 |--------------|------------------------------------|------------------------------------------------|
-| Setup        | [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) | 100% guaranteed setup guide               |
+| Setup        | [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) | 100% guaranteed setup guide           |
 | Licensing    | [LICENSES.md](../LICENSES.md)      | Full dependency licenses + commercial use      |
 | Architecture | [architecture.md](architecture.md) | System diagrams + component breakdown          |
-| Testing      | [Completion_And_Validation.md](Completion_And_Validation.md)   | 20/20 test results + performance metrics       |
+| Testing      | [Completion_And_Validation.md](Completion_And_Validation.md)   | test results + performance metrics       |
 | Verification | [verification.md](verification.md) | Completion certificate + checklist             |
 
 ---
@@ -90,7 +90,6 @@ AgentForge implements 5 key agentic concepts:
 | Total Cost              | $0                |
 | Test Coverage           | 92%               |
 | Lines of Code           | 2,847             |
-| Total Dependencies      | 35 (all permissive) |
 
 ---
 
@@ -139,10 +138,10 @@ textagentforge/
 - Commercial use allowed · Modifications must be shared alike  
 - All dependencies use permissive licenses (MIT, Apache 2.0, BSD)  
 - Top dependencies:
-  - LangChain 0.1.0 (MIT)  
+  - LangChain (MIT)  
   - Google Gemini API (Apache 2.0)  
-  - ChromaDB 0.4.18 (Apache 2.0)  
-  - sentence-transformers 2.2.2 (Apache 2.0)  
+  - ChromaDB (Apache 2.0)  
+  - sentence-transformers (Apache 2.0)  
 - Full list: [LICENSES.md](../LICENSES.md)
 
 ---
@@ -153,13 +152,13 @@ textagentforge/
 
 1. [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) – Get it running  
 2. [architecture.md](architecture.md) – Understand the system  
-3. [test_report.md](test_report.md) – See performance  
+3. [test_report.md](completetion_and_vadilation.md) – See performance  
 4. [LICENSES.md](../LICENSES.md) – Legal & commercial use  
 
 ### Advanced Topics
 
 - Agent-to-Agent Protocol → See Diagram 2 in [architecture.md](architecture.md) 
-- Quality Evaluation Framework → See Section 3 in [test_report.md](test_report.md) 
+- Quality Evaluation Framework → See Section 3 in [test_report.md](completetion_and_validatio.md) 
 
 ---
 
@@ -173,7 +172,7 @@ textagentforge/
 
 - Built For: Kaggle Agents Intensive Capstone 2025  
 - Documentation Version: v1.0.0  
-- Last Updated: November 29, 2025   
+- Last Updated: November 30, 2025   
 
 
 ---
