@@ -1,4 +1,4 @@
-# REPRODUCIBILITY.md — Setup Guide
+# Setup Guide
 
 > Guarantee: Follow these exact steps → AgentForge will run perfectly on any machine (Windows, macOS, Linux) or on Kaggle with zero cost.
 
