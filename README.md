@@ -21,7 +21,7 @@ python setup.py
 python examples/basic_usage.py
 ```
 
-See [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) for detailed setup instructions.
+See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for detailed setup instructions.
 
 ---
 
@@ -33,8 +33,8 @@ This hub organizes all technical and operational documentation into clear catego
 
 | Category     | Document                           | Purpose                                        |
 |--------------|------------------------------------|------------------------------------------------|
-| Setup        | [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) | 100% guaranteed setup guide           |
-| Licensing    | [LICENSES.md](../LICENSES.md)      | Full dependency licenses + commercial use      |
+| Setup        | [REPRODUCIBILITY.md](REPRODUCIBILITY.md) | 100% guaranteed setup guide           |
+| Licensing    | [LICENSES.md](LICENSES.md)      | Full dependency licenses + commercial use      |
 | Architecture | [architecture.md](docs/architecture.md) | System diagrams + component breakdown          |
 | Testing      | [Completion_And_Validation.md](docs/Completion_And_Validation.md)   | test results + performance metrics       |
 | Verification | [verification.md](docs/verification.md) | Completion certificate + checklist             |
@@ -98,7 +98,7 @@ AgentForge implements 5 key agentic concepts:
 - Tested on: Windows 11 · macOS 14 · Ubuntu 22.04/24.04  
 - Python versions: 3.10 · 3.11 · 3.12  
 - Success rate: 100% when steps followed  
-- Full guide: [REPRODUCIBILITY.md](../REPRODUCIBILITY.md)
+- Full guide: [REPRODUCIBILITY.md](REPRODUCIBILITY.md)
 
 ---
 
@@ -142,7 +142,7 @@ textagentforge/
   - Google Gemini API (Apache 2.0)  
   - ChromaDB (Apache 2.0)  
   - sentence-transformers (Apache 2.0)  
-- Full list: [LICENSES.md](../LICENSES.md)
+- Full list: [LICENSES.md](LICENSES.md)
 
 ---
 
@@ -150,10 +150,10 @@ textagentforge/
 
 ### Core Reading Path
 
-1. [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) – Get it running  
+1. [REPRODUCIBILITY.md](REPRODUCIBILITY.md) – Get it running  
 2. [architecture.md](docs/architecture.md) – Understand the system  
 3. [completetion_and_vadilation.md](docs/completetion_and_vadilation.md) – See performance  
-4. [LICENSES.md](../LICENSES.md) – Legal & commercial use  
+4. [LICENSES.md](LICENSES.md) – Legal & commercial use  
 
 ### Advanced Topics
 
