@@ -35,9 +35,9 @@ This hub organizes all technical and operational documentation into clear catego
 |--------------|------------------------------------|------------------------------------------------|
 | Setup        | [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) | 100% guaranteed setup guide           |
 | Licensing    | [LICENSES.md](../LICENSES.md)      | Full dependency licenses + commercial use      |
-| Architecture | [architecture.md](architecture.md) | System diagrams + component breakdown          |
-| Testing      | [Completion_And_Validation.md](Completion_And_Validation.md)   | test results + performance metrics       |
-| Verification | [verification.md](verification.md) | Completion certificate + checklist             |
+| Architecture | [architecture.md](docs/architecture.md) | System diagrams + component breakdown          |
+| Testing      | [Completion_And_Validation.md](docs/Completion_And_Validation.md)   | test results + performance metrics       |
+| Verification | [verification.md](docs/verification.md) | Completion certificate + checklist             |
 
 ---
 
@@ -151,20 +151,14 @@ textagentforge/
 ### Core Reading Path
 
 1. [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) – Get it running  
-2. [architecture.md](architecture.md) – Understand the system  
-3. [completetion_and_vadilation.md](completetion_and_vadilation.md) – See performance  
+2. [architecture.md](docs/architecture.md) – Understand the system  
+3. [completetion_and_vadilation.md](docs/completetion_and_vadilation.md) – See performance  
 4. [LICENSES.md](../LICENSES.md) – Legal & commercial use  
 
 ### Advanced Topics
 
-- Agent-to-Agent Protocol → See Diagram 2 in [architecture.md](architecture.md) 
-- Quality Evaluation Framework → See Section 3 in [completetion_and_vadilation.md](completetion_and_validatio.md) 
-
----
-
-## 🆘 Support & Community
-
-- Issues: [GitHub Issues]([https://github.com/challayogeswar/agentforge/doc](https://github.com/challayogeswar/agentforge/tree/main/docs))
+- Agent-to-Agent Protocol → See Diagram 2 in [architecture.md](docs/architecture.md) 
+- Quality Evaluation Framework → See Section 3 in [completetion_and_vadilation.md](docs/completetion_and_validatio.md) 
 
 ---
 
