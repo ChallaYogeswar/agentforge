@@ -1,9 +1,14 @@
+# ============================================
 # Virtual Environment
+# ============================================
 .venv/
 venv/
 env/
+.env/
 
+# ============================================
 # Python
+# ============================================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -27,8 +32,18 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+*.egg
 
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# ============================================
 # Testing
+# ============================================
 .pytest_cache/
 .tox/
 .coverage
@@ -39,28 +54,107 @@ coverage.xml
 *.cover
 *.py,cover
 .hypothesis/
+htmlcov/
 
+# ============================================
 # IDE
+# ============================================
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
+*.sublime-*
 
+# ============================================
 # Logs
+# ============================================
 *.log
+logs/
 data/logs/
 agentforge.log
 
-# Environment
+# ============================================
+# Environment Variables
+# ============================================
 .env
 .env.local
 .env.*.local
 
-# Data
+# ============================================
+# Data & Database
+# ============================================
+# Memory/Session data
 data/memory/sessions.db
 data/memory/vector_store/
+data/memory/*.db
 
-# Cache
-.pytest_cache/
+# SQLite database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Vector store data
+vector_store/
+embeddings/
+
+# ============================================
+# Test Results & Analysis Outputs
+# ============================================
+test_results/
+
+# ============================================
+# Temporary Files
+# ============================================
+tmpclaude-*
+*.tmp
+*.temp
+*.swp
+*.swo
+~*
+
+# ============================================
+# Build & Distribution
+# ============================================
+dist/
+build/
+*.egg-info/
+.eggs/
+lib/
+lib64/
+
+# ============================================
+# Node.js (Frontend)
+# ============================================
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.pnp
+frontend/.pnp.*
+frontend/package-lock.json
+
+# ============================================
+# OS Files
+# ============================================
+.DS_Store
+Thumbs.db
+
+# ============================================
+# Work in Progress
+# ============================================
+"TO BE IMPLE"/
+wip/
+draft/
+
+# ============================================
+# Documentation Downloads (PDFs, Images)
+# ============================================
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+
+C:\Users\chall\Downloads\PROJECTS\AGENT FORGE\DOC'S
